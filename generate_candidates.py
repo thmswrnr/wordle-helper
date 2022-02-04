@@ -76,16 +76,13 @@ def select_candidates(tries, words):
 
 
 if __name__ == "__main__":
-    '''
     parser = argparse.ArgumentParser("Wordle helper")
 
     parser.add_argument("--filter-doubles", action="store_true")
     parser.add_argument("--filter-umlauts", action="store_true")
 
-    words = load_words("words.txt")
+    words = load_words("words/deu.txt")
 
-    candidates = select_candidates(["p(e)nis","(k)lotz", "ac(k)(e)(r)"], words)
+    candidates = select_candidates(["p[e][n]i[s]"], words)
 
     print(candidates)
-    '''
-    pass
